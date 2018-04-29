@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+
+<title>Population Simulator Tool</title>
+   
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href = "css/FormStyle.css">
+ 
+  <link rel="stylesheet" href = "css/checkboxstyles.css">
+  
+     <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css">
+  
+      <link rel="stylesheet" href="css/styles.css"> 
+  
+ 	<script src = "js/populationSim.js"></script>
+	
+	<link rel="stylesheet" href="css/select.css">
+
+	
+<body>
+
+<div class="container">
+
+<header>
+   <div class="appheader">
+    <div class="logo">
+        <img src="images/zillow_group.png" width="110" alt="ebay Logo" />
+    </div>
+    <div class="apptitle">POPULATION SIMULATOR</div>
+    <div class="userinfo">
+        <div class="contgray">
+             Welcome Guest 
+        
+            <br>
+            <div style = "text-align:left">
+            <a href = "Logout"> Logout </a>
+            </div>
+        </div>
+    </div>
+    <div class="hdrbottomborder"></div>
+</div>
+</header>
+  
+<nav>
+
+</nav>
+
+<div class="shipping_calc">
+  
+  
+	<div id="accessform">
+   
+      <p class="alert alert-info" align = "left" >*Enter No of years you want to simulate population growth for</p> 
+  
+ 
+ 
+ <div id="packageDetails">
+ 
+ 	<div>
+     	<label for="Adult Population" style = "padding:5px;">Adult Amoeba Population:</label>
+     	
+     	<div id = "adultPop">
+     	</div>
+     	
+     	<br>
+     	
+     	<label for="Baby Population" style = "padding:5px;">Baby Amoeba Population:</label>
+     	<div id = "babyPop">
+     	</div>
+     	</div>
+ 
+  <label for="Package Type" style = "padding:10px;">Years:</label> 
+  
+  		
+		
+		<input type = "number" id="years" placeholder="Select No of Years" style="width:300px;" min="1" max="50" required>
+     	</div>
+     	
+     
+    
+     
+   <br>
+   
+   <button type="submit" class="btn btn-primary" onclick = "simulateGrowth()">Simulate Growth</button>
+   &nbsp;
+   <button type = "reset" class="btn btn-primary" onclick = "Reset()">Reset</button>
+   
+   <br>
+
+</div>   	    
+
+
+
+</div>
+			
+
+
+</div>
+
+
+ 
+</body>
+</html>
